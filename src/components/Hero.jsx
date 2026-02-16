@@ -7,14 +7,14 @@ const Hero = () => {
                 <div className="hero-content">
                     <div className="badge">
                         <Terminal size={16} />
-                        <span>Ethical Hacker | Cyber Domination</span>
+                        <span>Ethical Hacker | Cyber Security Analyst</span>
                     </div>
                     <h1 className="hero-title">
                         Muhammed <span className="highlight">Falah</span>
                     </h1>
                     <p className="hero-subtitle">
-                        Ethical Hacker dominating the digital landscape. I specialize in taking control of vulnerabilities,
-                        offensive security, and securing infrastructure with absolute authority.
+                        Ethical Hacker protecting digital assets. I specialize in vulnerability assessment,
+                        penetration testing, and securing infrastructure against modern threats.
                     </p>
                     <div className="hero-actions">
                         <a href="#projects" className="button button-primary">View Work</a>
