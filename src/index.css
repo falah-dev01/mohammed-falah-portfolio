@@ -174,11 +174,31 @@ ul {
   font-size: 0.95rem;
   color: var(--color-text-muted);
   font-weight: 500;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: var(--color-accent);
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
 }
 
 .nav-link:hover,
 .nav-link.active {
   color: var(--color-accent);
+  transform: translateY(-2px);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .mobile-toggle {
@@ -825,6 +845,7 @@ ul {
   font-size: 0.95rem;
   font-weight: 500;
 }
+
 /* 3D & New Theme Utilities */
 body {
   background-color: var(--color-background);
@@ -854,7 +875,8 @@ body {
   color: var(--color-text);
   border: 2px solid var(--color-text);
   box-shadow: 4px 4px 0px var(--color-text);
-  border-radius: 8px; /* Slightly sharper */
+  border-radius: 8px;
+  /* Slightly sharper */
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -889,7 +911,11 @@ body {
 }
 
 /* Override existing card styles for 3D look */
-.skill-card, .service-card, .project-card, .tool-card, .certificate-card {
+.skill-card,
+.service-card,
+.project-card,
+.tool-card,
+.certificate-card {
   background: var(--color-background);
   border: 2px solid var(--color-text);
   box-shadow: 4px 4px 0px var(--color-text);
@@ -897,7 +923,11 @@ body {
   transition: all 0.2s ease;
 }
 
-.skill-card:hover, .service-card:hover, .project-card:hover, .tool-card:hover, .certificate-card:hover {
+.skill-card:hover,
+.service-card:hover,
+.project-card:hover,
+.tool-card:hover,
+.certificate-card:hover {
   transform: translate(-4px, -4px);
   box-shadow: 8px 8px 0px var(--color-text);
   border-color: var(--color-text);
