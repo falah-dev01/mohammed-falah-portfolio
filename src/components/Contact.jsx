@@ -23,9 +23,9 @@ const Contact = () => {
                                 <Linkedin className="contact-icon" />
                                 <span>linkedin.com/in/falahmuhammed</span>
                             </a>
-                            <a href="https://github.com/falahmuhammed" target="_blank" rel="noopener noreferrer" className="contact-link">
+                            <a href="https://github.com/falah-dev01" target="_blank" rel="noopener noreferrer" className="contact-link">
                                 <Github className="contact-icon" />
-                                <span>github.com/falahmuhammed</span>
+                                <span>github.com/falah-dev01</span>
                             </a>
                         </div>
                     </div>
