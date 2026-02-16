@@ -36,7 +36,7 @@ const Contact = () => {
                         </p>
                         <form
                             className="contact-form card-3d"
-                            action="https://formspree.io/f/YOUR_FORM_ID"
+                            action="https://formspree.io/f/maqdjenw"
                             method="POST"
                         >
                             <div className="form-group">
