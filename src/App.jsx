@@ -10,19 +10,21 @@ import Footer from './components/Footer';
 
 import Certificates from './components/Certificates';
 
+import ScrollReveal from './components/ScrollReveal';
+
 function App() {
   return (
     <div className="app">
       <Navbar />
       <main>
-        <Hero />
-        <Skills />
-        <Tools />
-        <Experience />
-        <Certificates />
-        <Services />
-        <Projects />
-        <Contact />
+        <ScrollReveal><Hero /></ScrollReveal>
+        <ScrollReveal><Skills /></ScrollReveal>
+        <ScrollReveal><Tools /></ScrollReveal>
+        <ScrollReveal><Experience /></ScrollReveal>
+        <ScrollReveal><Certificates /></ScrollReveal>
+        <ScrollReveal><Services /></ScrollReveal>
+        <ScrollReveal><Projects /></ScrollReveal>
+        <ScrollReveal><Contact /></ScrollReveal>
       </main>
       <Footer />
     </div>
