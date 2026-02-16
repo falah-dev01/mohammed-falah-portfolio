@@ -31,9 +31,7 @@ const Contact = () => {
                     </div>
 
                     <div className="contact-form-wrapper">
-                        <p className="form-note" style={{ color: 'var(--color-accent)', marginBottom: '1rem', fontStyle: 'italic' }}>
-                            * To make this form work, verify your email at <a href="https://formspree.io/" target="_blank" className="highlight">formspree.io</a> and replace <strong>YOUR_FORM_ID</strong> in the code.
-                        </p>
+
                         <form
                             className="contact-form card-3d"
                             action="https://formspree.io/f/maqdjenw"
