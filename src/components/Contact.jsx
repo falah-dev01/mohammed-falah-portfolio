@@ -30,23 +30,32 @@ const Contact = () => {
                         </div>
                     </div>
 
-                    <form className="contact-form card-3d" onSubmit={(e) => e.preventDefault()}>
-                        <div className="form-group">
-                            <label htmlFor="name">Name</label>
-                            <input type="text" id="name" placeholder="John Doe" />
-                        </div>
-                        <div className="form-group">
-                            <label htmlFor="email">Email</label>
-                            <input type="email" id="email" placeholder="john@example.com" />
-                        </div>
-                        <div className="form-group">
-                            <label htmlFor="message">Message</label>
-                            <textarea id="message" rows="5" placeholder="Your message..."></textarea>
-                        </div>
-                        <button type="submit" className="button button-primary" style={{ width: '100%' }}>
-                            Send Message <Send size={18} />
-                        </button>
-                    </form>
+                    <div className="contact-form-wrapper">
+                        <p className="form-note" style={{ color: 'var(--color-accent)', marginBottom: '1rem', fontStyle: 'italic' }}>
+                            * To make this form work, verify your email at <a href="https://formspree.io/" target="_blank" className="highlight">formspree.io</a> and replace <strong>YOUR_FORM_ID</strong> in the code.
+                        </p>
+                        <form
+                            className="contact-form card-3d"
+                            action="https://formspree.io/f/YOUR_FORM_ID"
+                            method="POST"
+                        >
+                            <div className="form-group">
+                                <label htmlFor="name">Name</label>
+                                <input type="text" name="name" id="name" placeholder="John Doe" required />
+                            </div>
+                            <div className="form-group">
+                                <label htmlFor="email">Email</label>
+                                <input type="email" name="email" id="email" placeholder="john@example.com" required />
+                            </div>
+                            <div className="form-group">
+                                <label htmlFor="message">Message</label>
+                                <textarea name="message" id="message" rows="5" placeholder="Your message..." required></textarea>
+                            </div>
+                            <button type="submit" className="button button-primary" style={{ width: '100%' }}>
+                                Send Message <Send size={18} />
+                            </button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
