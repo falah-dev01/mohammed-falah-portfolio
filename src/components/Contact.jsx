@@ -30,7 +30,7 @@ const Contact = () => {
                         </div>
                     </div>
 
-                    <form className="contact-form" onSubmit={(e) => e.preventDefault()}>
+                    <form className="contact-form card-3d" onSubmit={(e) => e.preventDefault()}>
                         <div className="form-group">
                             <label htmlFor="name">Name</label>
                             <input type="text" id="name" placeholder="John Doe" />

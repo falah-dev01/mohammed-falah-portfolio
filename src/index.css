@@ -1,22 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
 
 :root {
-  --color-primary: #3f6212;
-  /* Olive/Lime 800 */
-  --color-secondary: #65a30d;
-  /* Olive/Lime 600 */
-  --color-accent: #4d7c0f;
-  /* Olive/Lime 700 */
-  --color-text: #1e293b;
-  /* Slate 800 - Dark text for light mode */
-  --color-text-muted: #64748b;
-  /* Slate 500 */
-  --color-background: #ffffff;
-  /* White background */
-  --color-surface: #f8fafc;
-  /* Slate 50 - Very light gray */
-  --color-border: #e2e8f0;
-  /* Slate 200 */
+  /* Dark Red & Beige Palette */
+  --color-primary: #7f1d1d;
+  /* Red 900 - Dark Red */
+  --color-secondary: #991b1b;
+  /* Red 800 */
+  --color-accent: #dc2626;
+  /* Red 600 - Vivid Red */
+
+  --color-background: #f5f5f4;
+  /* Stone 100 - Warm Beige */
+  --color-surface: #e7e5e4;
+  /* Stone 200 - Darker Beige for cards */
+  --color-surface-2: #d6d3d1;
+  /* Stone 300 - Even darker for depth */
+
+  --color-text: #450a0a;
+  /* Red 950 - Very Dark Brown/Red Text */
+  --color-text-muted: #78350f;
+  /* Amber 900 - Warm Brown Muted */
+
+  --color-border: #d6d3d1;
+  /* Stone 300 */
+
+  /* 3D Effects */
+  --shadow-sm: 2px 2px 0px rgba(69, 10, 10, 0.1);
+  --shadow-md: 4px 4px 0px rgba(69, 10, 10, 0.15);
+  --shadow-lg: 8px 8px 0px rgba(69, 10, 10, 0.2);
+  --shadow-floating: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
 
   --font-sans: 'Inter', sans-serif;
   --font-mono: 'JetBrains Mono', monospace;
@@ -709,6 +721,7 @@ ul {
   border-top: 1px solid var(--color-border);
   border-bottom: 1px solid var(--color-border);
 }
+
 /* Tools Section */
 .tools-grid {
   display: grid;
@@ -787,7 +800,8 @@ ul {
 
 .cert-icon-wrapper {
   padding: 1rem;
-  background-color: rgba(63, 98, 18, 0.1); /* Olive tint */
+  background-color: rgba(63, 98, 18, 0.1);
+  /* Olive tint */
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -810,4 +824,81 @@ ul {
   color: var(--color-text-muted);
   font-size: 0.95rem;
   font-weight: 500;
+}
+/* 3D & New Theme Utilities */
+body {
+  background-color: var(--color-background);
+  background-image: radial-gradient(var(--color-surface-2) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.card-3d {
+  background: var(--color-surface);
+  border: 2px solid var(--color-text);
+  box-shadow: var(--shadow-md);
+  transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transform-style: preserve-3d;
+}
+
+.card-3d:hover {
+  transform: translate(-4px, -4px);
+  box-shadow: 8px 8px 0px var(--color-text);
+}
+
+.text-3d {
+  text-shadow: 2px 2px 0px rgba(69, 10, 10, 0.1);
+}
+
+.button {
+  background-color: var(--color-background);
+  color: var(--color-text);
+  border: 2px solid var(--color-text);
+  box-shadow: 4px 4px 0px var(--color-text);
+  border-radius: 8px; /* Slightly sharper */
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: all 0.1s ease;
+}
+
+.button:hover {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0px var(--color-text);
+}
+
+.button:active {
+  transform: translate(4px, 4px);
+  box-shadow: 0px 0px 0px var(--color-text);
+}
+
+.button-primary {
+  background-color: var(--color-accent);
+  color: white;
+  border-color: var(--color-text);
+}
+
+.button-outline {
+  background-color: transparent;
+  color: var(--color-text);
+}
+
+.section-alt {
+  background-color: var(--color-surface);
+  border-top: 2px solid var(--color-text);
+  border-bottom: 2px solid var(--color-text);
+}
+
+/* Override existing card styles for 3D look */
+.skill-card, .service-card, .project-card, .tool-card, .certificate-card {
+  background: var(--color-background);
+  border: 2px solid var(--color-text);
+  box-shadow: 4px 4px 0px var(--color-text);
+  border-radius: 12px;
+  transition: all 0.2s ease;
+}
+
+.skill-card:hover, .service-card:hover, .project-card:hover, .tool-card:hover, .certificate-card:hover {
+  transform: translate(-4px, -4px);
+  box-shadow: 8px 8px 0px var(--color-text);
+  border-color: var(--color-text);
 }

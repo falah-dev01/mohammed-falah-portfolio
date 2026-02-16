@@ -18,7 +18,7 @@ const Hero = () => {
                     </p>
                     <div className="hero-actions">
                         <a href="#projects" className="button button-primary">View Work</a>
-                        <a href="#contact" className="button button-secondary">Contact Me</a>
+                        <a href="#contact" className="button button-outline">Contact Me</a>
                     </div>
                 </div>
 
