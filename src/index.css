@@ -209,9 +209,19 @@ ul {
   cursor: pointer;
 }
 
+
+.mobile-menu {
+  display: none;
+}
+
 /* Mobile Nav */
 @media (max-width: 768px) {
-  .nav-links {
+  .desktop-menu {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: flex;
     position: fixed;
     top: 70px;
     left: 0;

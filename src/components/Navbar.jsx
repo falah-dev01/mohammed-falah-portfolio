@@ -31,7 +31,7 @@ const Navbar = () => {
         </a>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex nav-links">
+        <div className="nav-links desktop-menu">
           {navLinks.map((link) => (
             <a
               key={link.name}
@@ -53,7 +53,7 @@ const Navbar = () => {
         </button>
 
         {/* Mobile Menu Overlay */}
-        <div className={`nav-links ${isOpen ? 'open' : ''} md:hidden`}>
+        <div className={`nav-links mobile-menu ${isOpen ? 'open' : ''}`}>
           {navLinks.map((link) => (
             <a
               key={link.name}
