@@ -30,6 +30,12 @@ const Experience = () => {
             institution: "RedTeam Hacker Academy",
             period: "Completed",
             description: "Specialized training in red teaming, offensive security, and infrastructure defense."
+        },
+        {
+            degree: "Certified Ethical Hacker (CEH)",
+            institution: "EC-Council",
+            period: "Completed",
+            description: "Mastered ethical hacking methodology, network security, and assessment of threats."
         }
     ];
     return (
