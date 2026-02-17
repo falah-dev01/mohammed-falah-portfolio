@@ -23,6 +23,34 @@ const Projects = () => {
             description: "Bash script automating the reconnaissance phase of penetration testing. Integrates subfinder, httpx, and nucleus for streamlined asset discovery.",
             tags: ["Bash", "Reconnaissance", "Automation"],
             links: { github: "#", demo: "#" }
+        },
+        {
+            title: "Wi-Fi Deauth Tool",
+            category: "Network Security",
+            description: "A Python-based utility to monitor local networks and perform deauthentication attacks for security auditing purposes (Educational).",
+            tags: ["Python", "Scapy", "Wireless Security"],
+            links: { github: "#", demo: "#" }
+        },
+        {
+            title: "Steganography Toolkit",
+            category: "Cryptography",
+            description: "Command-line tool to hide encrypted text within image files using Least Significant Bit (LSB) manipulation techniques.",
+            tags: ["C++", "Cryptography", "Steganography"],
+            links: { github: "#", demo: "#" }
+        },
+        {
+            title: "Password Strength Analyzer",
+            category: "Web Security",
+            description: "A client-side tool that evaluates password complexity in real-time against common dictionary attacks and rainbow table patterns.",
+            tags: ["JavaScript", "Security", "Algorithms"],
+            links: { github: "#", demo: "#" }
+        },
+        {
+            title: "Malware Analysis Sandbox",
+            category: "Malware Analysis",
+            description: "Configuration scripts for setting up an isolated, secure environment for analyzing suspicious executables and reverse engineering.",
+            tags: ["VirtualBox", "Powershell", "Forensics"],
+            links: { github: "#", demo: "#" }
         }
     ];
 
