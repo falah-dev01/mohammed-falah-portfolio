@@ -37,7 +37,7 @@ const Skills = () => {
                             </div>
                             <ul className="skill-list">
                                 {category.skills.map((skill, idx) => (
-                                    <li key={idx} className="skill-item">
+                                    <li key={idx} className="skill-item stagger-item">
                                         <span className="skill-bullet"></span>
                                         {skill}
                                     </li>

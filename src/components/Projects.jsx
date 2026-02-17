@@ -64,7 +64,7 @@ const Projects = () => {
 
                 <div className="projects-grid">
                     {projects.map((project, index) => (
-                        <div key={index} className="project-card">
+                        <div key={index} className="project-card stagger-item">
                             <div className="project-content">
                                 <div className="project-header">
                                     <FolderLock size={40} className="text-emerald-500 mb-4" />
@@ -78,7 +78,7 @@ const Projects = () => {
                                 <p className="project-desc">{project.description}</p>
                                 <div className="project-tags">
                                     {project.tags.map((tag, idx) => (
-                                        <span key={idx} className="project-tag">{tag}</span>
+                                        <span key={idx} className="project-tag stagger-item">{tag}</span>
                                     ))}
                                 </div>
                             </div>

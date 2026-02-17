@@ -21,7 +21,7 @@ const Tools = () => {
 
                 <div className="tools-grid">
                     {tools.map((tool, index) => (
-                        <div key={index} className="tool-card">
+                        <div key={index} className="tool-card stagger-item">
                             <div className="tool-icon">
                                 {tool.icon}
                             </div>
